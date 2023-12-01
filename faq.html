@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daya Hospital</title>
+    <style>
+        /* Basic Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Navigation Bar Styles */
+        .horizontal-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f0f0f0; /* Add your preferred background color */
+        }
+
+        .logo img {
+            max-height: 50px; /* Adjust as needed */
+        }
+
+        .navigation {
+            list-style: none;
+            display: flex;
+        }
+
+        .navigation li {
+            margin-right: 20px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #333; /* Adjust link color */
+        }
+
+        /* Opaque Image Styles */
+        .header-image {
+           
+            background-size: cover;
+            color: #fff; /* Adjust text color for better contrast */
+            text-align: center;
+            padding: 10px; /* Adjust as needed */
+        }
+
+        h1 {
+           font-family: "Georgia", serif; /* Change font family for hospital name */
+            color: black; /* Change font color for hospital name */
+            text-align: right; /* Align to the right */
+        }
+
+        .slogan {
+            font-size: 1em; /* Adjust font size for slogan */
+            margin-top: 10px; /* Adjust margin */
+            font-style: italic; /* Make slogan italic */
+            color: black; /* Change font color for slogan */
+            text-align: right; /* Align to the right */
+        }
+
+        .options {
+            text-align: right; /* Align buttons to the right */
+        }
+
+        .options a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #333; /* Adjust button background color */
+            color: #fff; /* Adjust button text color */
+            border-radius: 5px;
+        }
+
+        /* Boundary Separation Styles */
+        .boundary {
+            width: 100%;
+            height: 2px;
+            background-color: #ccc; /* Line color */
+            margin-top: 20px; /* Adjust margin */
+        }
+
+
+        /* Add more styles for other sections as needed */
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="horizontal-nav">
+        <div class="logo">
+            <img src="Logo.png" alt="Daya Hospital Logo">
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="faq.html">FAQ</a></li> <!-- Link to your FAQ page -->
+            <li><a href="female.html">Female</a></li>
+            <li><a href="male.html">Male</a></li>
+            <li><a href="male.html">Child</a></li>
+        </ul>
+    </nav>
+
+    <!-- Opaque Image with Contact and Location -->
+    <div class="header-image">
+        <h1>DAYA HOSPITAL</h1>
+        <p class="slogan">Where Compassion Meets Care, Every Patient, Every Moment</p>
+        <div class="options">
+            <a href="contact.html">Contact Now</a>
+            <a href="https://maps.app.goo.gl/R3daFX9pMWWaH53u8">Location</a>
+        </div>
+    </div>
+
+    <!-- Attractive Border Lines -->
+
+    <!-- Knowledge and Pics Section -->
+
+    <!-- Footer -->
+
+    <!-- Boundary Separation -->
+    <div class="boundary"></div>
+    
+    
+    <!-- Example JavaScript (Inline) -->
+    <script>
+        // Your JavaScript code goes here
+        // For more complex functionality, consider using an external JavaScript file
+        console.log('JavaScript is working!');
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daya Hospital FAQ</title>
+    <style>
+        /* Add your existing styles here */
+
+        /* FAQ Page Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f8f8f8;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item h2 {
+            color: #2c3e50;
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .faq-answer {
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+
+        <!-- Search Bar -->
+        <input type="text" class="search-bar" id="searchInput" onkeyup="searchFAQ()" placeholder="Search for a question...">
+
+        <!-- FAQ Items -->
+        <div class="faq-item">
+            <h2>General Information</h2>
+            <ul>
+                <li onclick="showAnswer(this)">What services does the hospital provide?</li>
+                <p class="faq-answer hidden">Our hospital provides a wide range of medical services, including tests, ambulance, delevery, medicine related, female, male and child all are cured.</p>
+                <li onclick="showAnswer(this)">What are the hospital's hours of working?</li>
+                <p class="faq-answer hidden">We are open for you everyday and are availableon your one call 24/7</p>
+                <li onclick="showAnswer(this)">Where is the hospital located?</li>
+                <p class="faq-answer hidden">Our hospital is located at dadri gate, bhiwani(127021), haryana, india. [for map you can tab location on the top]...</p>
+            </ul>
+        </div>
+
+        <div class="faq-item">
+            <h2>Appointment and Booking</h2>
+            <ul>
+                <li onclick="showAnswer(this)">How can patients schedule appointments?</li>
+                <p class="faq-answer hidden">Patients can schedule appointments by calling our reception at [9467604067] or by online appointing themself from contact section</p>
+                <li onclick="showAnswer(this)">Is there an online booking system?</li>
+                <p class="faq-answer hidden">Yes, we offer an online booking system through our website.</p>
+                <li onclick="showAnswer(this)">What information is required when booking an appointment?</li>
+                <p class="faq-answer hidden">When booking an appointment, patients need to provide their full name, contact, reason for appointment, from which doctor they want to meet ( you can view appointment form for more details )</p>
+            </ul>
+        </div>
+
+        <div class="faq-item">
+            <h2>Emergency Procedures</h2>
+            <ul>
+                <li onclick="showAnswer(this)">What should individuals do in case of a medical emergency?</li>
+                <p class="faq-answer hidden">In case of a medical emergency, individuals should immediately call emergency services...</p>
+                <li onclick="showAnswer(this)">Are there emergency contact numbers provided?</li>
+                <p class="faq-answer hidden">Yes, emergency contact numbers are prominently displayed in various areas of the hospital site</p>
+            </ul>
+        </div>
+
+        <div class="faq-item">
+            <h2>Insurance and Billing</h2>
+            <ul>
+                <li onclick="showAnswer(this)">How can patients inquire about billing and payments?</li>
+                <p class="faq-answer hidden">Patients can inquire about billing and payments by contacting our department...</p>
+            </ul>
+        </div>
+
+        <div class="faq-item">
+            <h2>Visitor Information</h2>
+            <ul>
+                <li onclick="showAnswer(this)">Are there specific visiting hours?</li>
+                <p class="faq-answer hidden">Yes, specific visiting hours are in place to ensure the well-being of patients...</p>
+                <li onclick="showAnswer(this)">What are the guidelines for visitors?</li>
+                <p class="faq-answer hidden">Visitors are requested to follow guidelines such as maintain hygine in hospital, do not make noice, and do not disturb anyone and for more ask to hospital</p>
+            </ul>
+        </div>
+
+        <div class="faq-item">
+            <h2>Medical Procedures and Tests</h2>
+            <ul>
+                <li onclick="showAnswer(this)">Information about common medical procedures.</li>
+                <p class="faq-answer hidden">Common medical procedures include tests and tablet.</p>
+            </ul>
+        </div>
+
+        <div class="faq-item">
+            <h2>Patient Rights and Privacy</h2>
+            <ul>
+                <li onclick="showAnswer(this)">What are the patient rights and responsibilities? </li>
+                  <p class="faq-answer hidden"> Patients have the right to receive quality care and be informed about their medical condition.</p>
+                  </ul>
+                  </div>
+                  
+  <div class="faq-item">
+        <h2>Specialized Services</h2>
+        <ul>
+            <li onclick="showAnswer(this)">Information about specialized departments or services.</li>
+            <p class="faq-answer hidden">We have specialized departments such as cardiology, oncology, and...</p>
+            <li onclick="showAnswer(this)">Any unique or advanced medical technologies used?</li>
+            <p class="faq-answer hidden">Our hospital employs advanced medical technologies such as...</p>
+        </ul>
+    </div>
+
+    <div class="faq-item">
+        <h2>Post-Treatment and Recovery</h2>
+        <ul>
+            <li onclick="showAnswer(this)">What should patients expect after a procedure?</li>
+            <p class="faq-answer hidden">After a procedure, patients can expect...</p>
+            <li onclick="showAnswer(this)">Guidelines for post-treatment care and recovery.</li>
+            <p class="faq-answer hidden">Post-treatment care involves...</p>
+        </ul>
+    </div>
+
+    <div class="faq-item">
+        <h2>Feedback and Complaints</h2>
+        <ul>
+            <li onclick="showAnswer(this)">How can patients provide feedback or file a complaint?</li>
+            <p class="faq-answer hidden">Patients can provide feedback or file a complaint through our google maps</p>
+            <li onclick="showAnswer(this)">Is there a patient satisfaction survey?</li>
+            <p class="faq-answer hidden">Yes, you can answer you satisfaction at google maps</p>
+        </ul>
+    </div>
+    
+
+    <div class="faq-item">
+        <h2>Accessibility</h2>
+        <ul>
+            <li onclick="showAnswer(this)">Is the hospital accessible to individuals with disabilities?</li>
+            <p class="faq-answer hidden">Yes, the hospital is accessible, and we provide assistance for individuals with disabilities wheel chair and staff support for movement.</p>
+            <li onclick="showAnswer(this)">Are there wheelchair or other accessibility services?</li>
+            <p class="faq-answer hidden">Wheelchair and other accessibility services are available.</p>
+        </ul>
+    </div>
+
+    <div class="faq-item">
+        <h2>Health and Wellness Tips</h2>
+        <ul>
+            <li onclick="showAnswer(this)">OPD timing of doctors.</li>
+            <p class="faq-answer hidden">OPD timing is 10AM to 2 PM.</p>
+            <li onclick="showAnswer(this)">Timingin case of emergency.</li>
+            <p class="faq-answer hidden">Throughout the day everytime available.</p>
+        </ul>
+    </div>
+</div>
+
+ <script>
+        function searchFAQ() {
+            var input, filter, ul, li, i, txtValue;
+            input = document.getElementById('searchInput');
+            filter = input.value.toUpperCase();
+            ul = document.querySelector('.faq-container');
+            li = ul.querySelectorAll('.faq-item');
+
+            li.forEach(item => {
+                var question = item.getElementsByTagName('h2')[0];
+                var answer = item.querySelector('.faq-answer');
+                txtValue = question.textContent || question.innerText;
+                txtValue += answer.textContent || answer.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        function showAnswer(element) {
+            var answer = element.nextElementSibling;
+            if (answer.style.display === 'none') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Contact us</h3>
+            <p>Address: Dadri gate, Bhiwani, Haryana</p>
+            <p>Phone: 9467604067</p>
+            <p>Email: dayahospitalbhiwani@gmail.com</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <p>Twitter: <a href="https://twitter.com/YourTwitterHandle" target="_blank">@YourTwitterHandle</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/YourInstagramHandle" target="_blank">@YourInstagramHandle</a></p>
+        </div>
+    </div>
+
+    <!-- Additional Footer Information or Links -->
+    <div class="additional-info">
+        <p>&copy; 2023 Daya Hospital. All rights reserved.</p>
+        <!-- Add more information or links as needed -->
+    </div>
+</footer>
+
+<!-- Footer Styles -->
+<style>
+    footer {
+        background-color: #333; /* Footer background color */
+        color: #fff; /* Footer text color */
+        padding: 20px;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-section {
+        flex: 1;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    a {
+        color: #fff; /* Link color in footer */
+    }
+
+    .additional-info {
+        text-align: center;
+        margin-top: 20px;
+    }
+</style>
